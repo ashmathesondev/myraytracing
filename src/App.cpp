@@ -8,6 +8,7 @@
 #include <ostream>
 #include <stdexcept>
 #include <allegro5/allegro_primitives.h>
+#include <imgui_impl_allegro5.h>
 
 App::App() :
     m_running(true), m_event_queue(nullptr), m_timer(nullptr), m_frames(0), m_io(nullptr)

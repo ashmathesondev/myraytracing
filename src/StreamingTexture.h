@@ -26,12 +26,12 @@ public:
     [[nodiscard]] const std::uint32_t* Data() const { return m_pixels.data(); }
 
     // Upload CPU buffer -> GPU texture
-    bool Upload() const;
+    [[nodiscard]] bool Upload() const;
 
-    // Draw to current target
+    // Draw to the current target
     void Draw(float x, float y, int flags = 0) const;
 
-    // Get underlying bitmap if needed (for ImGui::Image)
+    // Get the underlying bitmap if needed (for ImGui::Image)
     [[nodiscard]] ALLEGRO_BITMAP* GetBitmap() const { return m_bitmap; }
 
 private:
