@@ -26,18 +26,18 @@ public:
     void Unlock();
     void Render(ALLEGRO_DISPLAY* display, float x, float y) const;
 
-    int GetPitch() const
+    [[nodiscard]] int GetPitch() const
     {
         if (!m_locked) return 0;
         return m_locked->pitch;
     }
 
-    int GetWidth() const;
-    int GetHeight() const;
+    [[nodiscard]] int GetWidth() const;
+    [[nodiscard]] int GetHeight() const;
 
     void SetPixel(int x, int y, float r, float g, float b) const;
 
-    ALLEGRO_COLOR* GetPixels() {return m_pixels;};
+    [[nodiscard]] ALLEGRO_COLOR* GetPixels() const { return m_pixels; };
 
 };
 

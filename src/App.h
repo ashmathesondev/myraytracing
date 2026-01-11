@@ -8,7 +8,6 @@
 
 #include <allegro5/allegro5.h>
 #include <imgui.h>
-#include <imgui_impl_allegro5.h>
 
 class App
 {
