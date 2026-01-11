@@ -31,3 +31,7 @@
 *.exe
 *.out
 *.app
+
+# additional unnecessary files
+.output.txt
+allegro.log
